@@ -1,0 +1,226 @@
+*{
+     padding: 0;
+     margin: 0;
+}
+
+body {
+  
+    font-family: "Agu Display", serif;
+    background: linear-gradient(135deg, rgba(74, 16, 65, 0.757), rgba(22, 10, 19, 0.888)),
+    url("../img/ai-generated-8330087_1920.png") no-repeat top center / cover;
+    
+
+}
+
+
+.introduction-container {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+
+}
+.introduction-container h2 {
+    color: white;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.level-btn {
+    cursor: pointer;
+    background-color: #8f2b71d8;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    padding: 15px 100px 15px 100px;
+    box-shadow: rgb(228, 230, 231) 0px 20px 30px -10px;
+}
+
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: "Agu Display", serif;
+
+    font-size: 1.6rem;
+
+}
+
+.level-btn:hover, 
+.level-btn:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+  background-color: 0 0 0 2em transparent;
+
+}
+
+@keyframes pulse {
+  0% { 
+    box-shadow: 0 0 0 0 var(--hover); 
+}
+
+0% {background-color: 0 0 0 0 var(--hover);
+}
+}
+.level-btn:hover {
+    animation: shake 0.5s;
+    border: 2px solid orangered;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) translateX(0);
+    }
+    25% {
+        transform: rotate(-10deg) translateX(-10px);
+    }
+    50% {
+        transform: rotate(0deg) translateX();
+    }
+    75% {
+        transform: rotate(10deg) translateX(10px);
+    }
+    
+    100% {
+        transform: rotate(0deg) translateX(0px);
+    }
+    
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-btn {
+    height: 1px;
+    width: 250px;
+    background-color: orangered;
+
+}
+.botm-btn {
+    height: 4px;
+    width: 250px;
+    background-color: orangered;
+}
+
+@media (max-width: 375px) {
+
+    body {
+        background: linear-gradient(135deg, rgba(74, 16, 65, 0.757), rgba(22, 10, 19, 0.888)),
+        url("../img/ai-generated-8330087_1920.png") no-repeat right center / cover;
+    }
+    .game-header h1 {       
+        text-align: center;   
+    }
+    .introduction-container {
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+        margin: 0;   
+        justify-content: center;      
+        padding: 0;
+    }
+    .introduction-container  h2 {
+        text-align: center;
+    }
+       
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+ 
+    .level-btn a h2 {       
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    body {
+        background: linear-gradient(135deg, rgba(74, 16, 65, 0.757), rgba(22, 10, 19, 0.888)),
+        url("../img/ai-generated-8330087_1920.png") no-repeat right center / cover;
+    }
+    .game-header h1 {       
+        text-align: center;   
+    }
+    .introduction-container {
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+        margin: 0;   
+        justify-content: center;      
+        padding: 0;
+    }
+    .introduction-container  h2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+       
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .top-btn {
+        margin-top: 50px;
+    }
+    .level-btn a h2 {       
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 540px) {
+    body {
+        background: linear-gradient(135deg, rgba(74, 16, 65, 0.757), rgba(22, 10, 19, 0.888)),
+        url("../img/ai-generated-8330087_1920.png") no-repeat right center / cover;
+    }
+    .game-header h1 {       
+        text-align: center;   
+    }
+    .introduction-container {
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+        margin: 0;   
+        justify-content: center;      
+        padding: 0;
+    }
+    .introduction-container  h2 {
+        margin-top: 50px;
+        text-align: center;
+    }
+       
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .top-btn {
+        margin-top: 50px;
+    }
+    .level-btn a h2 {       
+        margin: 0;
+        padding: 0;
+    }
+}

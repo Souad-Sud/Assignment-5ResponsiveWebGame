@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Agu Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    background: linear-gradient(135deg, rgba(74, 16, 65, 0.757), rgba(22, 10, 19, 0.888)),
+    url("../img/ai-generated-8330087_1920.png") no-repeat top center / cover;
+}
+
+.game-header {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-header h1 {
+    color: #3f022b;
+}
+
+.home-icon {
+    height: 50px;
+    width: 50px;
+}

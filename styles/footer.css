@@ -1,0 +1,45 @@
+
+footer {
+  
+    margin-top: 60px;
+    color: #7B246A;
+    font-size: 1rem; 
+    height: auto;
+    border-top: solid white 3px;
+    background-color: #D5CEC6;
+    
+}
+
+ 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin: 20px 0 5px 0;   
+} 
+
+.footer-content a{
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: blue;      
+} 
+
+.footer-content a:hover{
+    text-decoration: underline;       
+} 
+ 
+hr {
+    width: 100%;
+}
+
+.copy-right {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold; 
+}

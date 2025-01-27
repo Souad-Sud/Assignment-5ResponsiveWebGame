@@ -80,6 +80,9 @@ function matchCards(img1, img2) {
     matchCard++; 
     if(matchCard == 8){
         setTimeout(() => {
+            let message = document.querySelector(".congrat-message");
+            message.textContent = "congratulation you finished level One";
+           
             shuffleCard();
             
         }, 1000);
