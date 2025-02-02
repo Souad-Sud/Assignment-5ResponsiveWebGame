@@ -123,7 +123,7 @@ function shuffleCard(){
         }
          
         let imagTag = card.querySelector(".back-view img");      
-        imagTag.src = `./img-level2/img_${array[i]}.jpeg`;  
+        imagTag.src = `./img/img-${array[i]}.jpeg`;  
         card.addEventListener("click", flipCard);
     })
 }
