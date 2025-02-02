@@ -34,3 +34,109 @@ body {
     height: 50px;
     width: 50px;
 }
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.sidbar-game {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.sidebar {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    background: #e6e6e6;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 300px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.list li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list li h2 {
+    margin: auto;
+}
+
+li button {
+    margin: 10px;
+}
+
+button .icon {
+    height: 50px;   
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #3f022b;
+    border: 1px solid white;
+    border-radius: 9px;
+    height: 50px;
+    width: 50px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0px;  
+}
+
+button:hover {
+    border-radius: 0;
+}
+ 
+.wrapper {
+     
+    background: #e6e6e6;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 100%;
+}
+
+.view img {
+   height: 220px;
+   width: 150px;
+   padding: 5px;
+}
+
+.cards {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ 
+}
+
+ul {
+    list-style: none;
+}
+.bgm {
+    background-image: url("../img/PinkFlower.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

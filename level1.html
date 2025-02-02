@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Irish+Grover&family=League+Spartan:wght@100..900&family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
-    <script src="./script/index.js" defer></script>
-    <title>Memory game</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Irish+Grover&family=League+Spartan:wght@100..900&family=Noto+Serif:ital@1&display=swap"
+        rel="stylesheet">
+    <script src="./script/level1.js" defer></script>
+    <title>Memory game level-1</title>
 </head>
+
 <body>
     <header class="game-header">
         <div></div>
@@ -24,220 +28,225 @@
 
     </header>
     <div class="congrat-message"></div>
-    <div class="container"> 
-    <div class="sidbar-game">
+    <div class="container">
+        <div class="sidbar-game">
 
-    <div class="sidebar">
-        
-        <ul class="list">
-            <li>
-                <button class="restart btn">
-                    
-                    <img src="./img/restart.png" alt="" class="icon rest-icon">
-                    
-                </button>
-                <span>Restart</span>
-            </li>
-            <li>
-                <button class="timing btn">
-                    <img src="./img/clock.png" alt="" class="icon">
-                </button>
-                <span class="countdown"></span>
-            </li>
-            <li>
-                <button class="audio">
-                <img src="./img/audio.png" alt="" class="icon">  
-                <audio  id="audio" src="./img/music.mp3"></audio>
-            </button>
-            <span class="sound-muted">Sound</span></li>
-        </ul>
-        
-    </div>
-   
-   <div class="wrapper">
-    
-    <ul class="cards">
+            <div class="sidebar">
 
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-1.jpeg" alt="">
+                <ul class="list">
+                    <li>
+                        <h2>Level one</h2>
+                    </li>
+                    <li>
+                        <button class="restart btn">
+
+                            <img src="./img/restart.png" alt="" class="icon rest-icon">
+
+                        </button>
+                        <span>Restart</span>
+                    </li>
+                    <li>
+                        <button class="timing btn">
+                            <img src="./img/clock.png" alt="" class="icon">
+                        </button>
+                        <span class="countdown"></span>
+                    </li>
+                    <li>
+                        <button class="audio">
+                            <img src="./img/audio.png" alt="" class="icon">
+                            <audio id="audio" src="./img/music.mp3"></audio>
+                        </button>
+                        <span class="sound-muted">Sound</span>
+                    </li>
+                </ul>
 
             </div>
-        </li>        
 
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-2.jpeg" alt="">
+            <div class="wrapper">
 
-            </div>
-        </li>
-         
-         
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-3.jpeg" alt="">
+                <ul class="cards">
 
-            </div>
-        </li>
-        
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-4.jpeg" alt="">
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-1.jpeg" alt="">
 
-            </div>
-        </li >
-         <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-4.jpeg" alt="">
+                        </div>
+                    </li>
 
-            </div>
-        </li>
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view bgm">
-                <img src="./img/img-5.jpeg" alt="">
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-2.jpeg" alt="">
 
-            </div>
-        </li>
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view bgm">
-                <img src="./img/img-6.jpeg" alt="">
-
-            </div>
-        </li>
-
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-7.jpeg" alt="">
-
-            </div>
-        </li>
-
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-6.jpeg" alt="">
-
-            </div>
-        </li>
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-8.jpeg" alt="">
-
-            </div>
-        </li>
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-1.jpeg" alt="">
-
-            </div>
-        </li>
-
- 
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-2.jpeg" alt="">
-
-            </div>
-        </li>
-
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-5.jpeg" alt="">
-
-            </div>
-        </li>
+                        </div>
+                    </li>
 
 
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-7.jpeg" alt="">
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-3.jpeg" alt="">
 
-            </div>
-        </li>
+                        </div>
+                    </li>
 
-   
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-3.jpeg" alt="">
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-4.jpeg" alt="">
 
-            </div>
-        </li>
-        
-     
-        <li class="card">
-            <div class="view front-view bgm">
-                <span class="material"></span>
-            </div>
-            <div class="view back-view">
-                <img src="./img/img-8.jpeg" alt="">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-4.jpeg" alt="">
 
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view bgm">
+                            <img src="./img/img-5.jpeg" alt="">
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view bgm">
+                            <img src="./img/img-6.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-7.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-6.jpeg" alt="">
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-8.jpeg" alt="">
+
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-1.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-2.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-5.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-7.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-3.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+                    <li class="card">
+                        <div class="view front-view bgm">
+                            <span class="material"></span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="./img/img-8.jpeg" alt="">
+
+                        </div>
+                    </li>
+
+
+                </ul>
             </div>
-        </li>
-           
-
-    </ul>
-   </div>
-</div>
-</div>
-<footer>
-    <div class="footer">
-        <div class="footer-content">
-            <h2>Find me on</h2>
-
-            <a href="https://github.com/Souad-Sud">https://github.com/Souad-Sud</a>
-          
-        </div>
-       
-        <div class="copy-right"> 
-            <hr>
-            Copyright © 2024 Memory Card Game by Souad 
         </div>
     </div>
-</footer>
-    
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h2>Find me on</h2>
+
+                <a href="https://github.com/Souad-Sud">https://github.com/Souad-Sud</a>
+
+            </div>
+
+            <div class="copy-right">
+                <hr>
+                Copyright © 2024 Memory Card Game by Souad
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

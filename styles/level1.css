@@ -44,17 +44,14 @@ body {
     padding: 10px;
     animation: animate 3s linear infinite;
     position: relative;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #8d137e, #585555, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-   
- 
- 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #8d137e, #585555, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
 }
 
 @keyframes animate {
@@ -107,6 +104,11 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
+.list li h2 {
+    margin: auto;
+}
+
 li button {
     margin: 10px;
 }
@@ -144,8 +146,6 @@ button:hover {
     padding: 25px;
  
 }
-
- 
 
 .cards, .card, .view {
     display: flex;
@@ -278,8 +278,7 @@ button:hover {
 
     .wrapper {
         display: flex;
-        flex-direction: column;
-     
+        flex-direction: column;     
         width: 100%;
     }
     .cards {
