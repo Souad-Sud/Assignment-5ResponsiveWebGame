@@ -1,5 +1,7 @@
 let restarBtn = document.querySelectorAll(".btn");
 let imageRest = document.querySelector(".rest-icon");
+let wins = 0;
+let loss = 0;
 
 restarBtn.forEach(button => {
     button.addEventListener("click", () => {
@@ -37,10 +39,11 @@ const countDownInterval = setInterval(unpdateCountdown, 1000);
 
 function unpdateCountdown() {
     if(time <= 0){
+        loss++
         clearInterval(countDownInterval);
         countDown.innerHTML = "00:00";
         countDown.innerHTML = "time is up";
-        window.location.reload();
+        shuffleCard();
 
         return;
     }
@@ -78,7 +81,8 @@ function flipCard(e) {
 function matchCards(img1, img2) {
    if(img1 === img2) {
     matchCard++; 
-    if(matchCard == 8){
+    if(matchCard == 8) {
+        wins++
         setTimeout(() => {
             let message = document.querySelector(".congrat-message");
             message.textContent = "congratulation you finished level One";
@@ -110,24 +114,28 @@ function matchCards(img1, img2) {
 }
 
 function shuffleCard(){
+    displWins()
     matchCard = 0;
     cardOne = cardTwo = "";
     disabledDeck = false;
 
-    let array = [1, 2, 3, 4, 5, 6, 7, 8];
+    let array = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
     array.sort(() => (Math.random() > 0.5 ? 1 : -1));
     cards.forEach((card, i) =>{
     card.classList.remove("flipped", "shake");
-        if(i > 7 ) {
-            i -= 8
-        }
+        // if(i > 7 ) {
+        //     i -= 8
+        // }
          
         let imagTag = card.querySelector(".back-view img");      
         imagTag.src = `./img/img-${array[i]}.jpeg`;  
         card.addEventListener("click", flipCard);
     })
 }
+const displWins = () => {
+    console.log(wins, loss)
 
+}
 shuffleCard();
 cards.forEach((card)=> {
     //card.classList.add("flipped")
@@ -135,3 +143,4 @@ cards.forEach((card)=> {
   card.addEventListener("click", flipCard);
 
 })
+
