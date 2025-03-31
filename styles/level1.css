@@ -137,7 +137,19 @@ span {
 button:hover {
     border-radius: 0;
 }
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
  
+.score p {
+    font-size: 1.2rem;
+    color: #3f022b;
+}
 .wrapper {
     height: 750px;
     width: 700px;
@@ -223,6 +235,7 @@ button:hover {
     animation: shake 0.4s ease-in-out;
 }
 
+
 @keyframes shake {
 0%, 100% {
     transform: translateX(0);
@@ -255,6 +268,7 @@ button:hover {
 .muted {
     text-decoration: line-through wavy red 5px;
 }
+
 
 @media (max-width: 375px) {
     body {

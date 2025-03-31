@@ -1,7 +1,9 @@
 let restarBtn = document.querySelectorAll(".btn");
 let imageRest = document.querySelector(".rest-icon");
+
 let wins = 0;
 let loss = 0;
+
 
 restarBtn.forEach(button => {
     button.addEventListener("click", () => {
@@ -32,18 +34,31 @@ restartBtn.addEventListener("click" , () => {
 })
 
 const countDown = document.querySelector(".countdown");
-let startMinutes = 2;
+let startMinutes = 1;
 let time = startMinutes * 60 ;
 const countDownInterval = setInterval(unpdateCountdown, 1000);
-
+function restartGame(){
+    time = startMinutes * 60;
+    countDown.innerHTML = "1:00"
+    matchCard =0;
+    shuffleCard();
+    clearInterval(countDownInterval);
+    countDownInterval = setInterval(unpdateCountdown, 1000)
+}
 
 function unpdateCountdown() {
     if(time <= 0){
         loss++
+        displWins()
         clearInterval(countDownInterval);
         countDown.innerHTML = "00:00";
-        countDown.innerHTML = "time is up";
+        countDown.innerHTML = "time is up!";
+        // setTimeout(() => {
+        //     restartGame();
+        // }, 1000);
         shuffleCard();
+        let message = document.querySelector(".congrat-message");
+        message.textContent = "OOOps You lost the game, try again!!!";
 
         return;
     }
@@ -67,8 +82,7 @@ function flipCard(e) {
         clickedCard.classList.add("flipped");
         if(!cardOne) {
             return(cardOne = clickedCard)
-        }
-        
+        }       
         cardTwo = clickedCard;
         disabledDeck = true;
         let cardOneImage = cardOne.querySelector("img").src;
@@ -78,11 +92,17 @@ function flipCard(e) {
     }
 }
 
+const displWins = () => {
+    document.getElementById("winCount").textContent = wins;
+    document.getElementById("lossCount").textContent = loss;
+}
+
 function matchCards(img1, img2) {
    if(img1 === img2) {
     matchCard++; 
     if(matchCard == 8) {
         wins++
+        displWins();
         setTimeout(() => {
             let message = document.querySelector(".congrat-message");
             message.textContent = "congratulation you finished level One";
@@ -114,11 +134,10 @@ function matchCards(img1, img2) {
 }
 
 function shuffleCard(){
-    displWins()
+  
     matchCard = 0;
     cardOne = cardTwo = "";
     disabledDeck = false;
-
     let array = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
     array.sort(() => (Math.random() > 0.5 ? 1 : -1));
     cards.forEach((card, i) =>{
@@ -131,11 +150,10 @@ function shuffleCard(){
         imagTag.src = `./img/img-${array[i]}.jpeg`;  
         card.addEventListener("click", flipCard);
     })
+    time = startMinutes * 60;
+    countDown.innerHTML = "1:00"
 }
-const displWins = () => {
-    console.log(wins, loss)
 
-}
 shuffleCard();
 cards.forEach((card)=> {
     //card.classList.add("flipped")
@@ -143,4 +161,3 @@ cards.forEach((card)=> {
   card.addEventListener("click", flipCard);
 
 })
-
