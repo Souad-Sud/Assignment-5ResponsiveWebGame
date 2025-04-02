@@ -33,10 +33,11 @@ function shuffleCard() {
     countDown.innerHTML = "1:00";
     gameStarted = false;
 
-    wins = 0;
-    losses = 0;
-    winCountDisplay.textContent = wins;
-    lossCountDisplay.textContent = losses;
+    //If want to update wins and losses to 0 without clicking on the button restartIcon uncommon this line down
+    // wins = 0;
+    // losses = 0;
+    // winCountDisplay.textContent = wins;
+    // lossCountDisplay.textContent = losses;
 
     message.textContent = "";
 }
@@ -62,7 +63,7 @@ function updateCountdown() {
         
         setTimeout(() => {
             shuffleCard(); 
-        }, 1500);
+        }, 2000);
         
         return;
     }
@@ -97,14 +98,14 @@ function matchCards(img1, img2) {
         matchCard++;
         if (matchCard === 8) {
             setTimeout(() => {
-                message.textContent = "🎉 Congratulations! You won! 🎉";
+                message.textContent = "Congratulations! You won!";
                 clearInterval(countDownInterval);
                 
                 wins++;
                 winCountDisplay.textContent = wins; 
                 setTimeout(() => {
                     shuffleCard();
-                }, 1500);
+                }, 2000);
                 
             }, 500);
         }
@@ -125,6 +126,12 @@ function matchCards(img1, img2) {
 restartIcon.addEventListener("click", () => {
     clearInterval(countDownInterval); 
     shuffleCard(); 
+    wins = 0;
+    losses = 0;
+    winCountDisplay.textContent = wins;
+    lossCountDisplay.textContent = losses;
+
+    message.textContent = ""; 
 });
 
 
